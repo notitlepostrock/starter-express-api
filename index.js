@@ -1,3 +1,7 @@
+require("fix-esm").register();
+const { GoogleSpreadsheet } = require('google-spreadsheet');
+const { JWT } =require('google-auth-library');
+
 const express = require('express')
 const app = express()
 app.all('/', (req, res) => {
